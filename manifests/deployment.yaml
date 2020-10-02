@@ -19,11 +19,8 @@ spec:
         ports:
         - containerPort: 80
         command:
-        - /ttt-entrypoint.sh
+        - /bin/sh
+        - -c
         args:
-        - averylongparameter1
-        - averylongparameter2
-        - averylongparameter3
-        - averylongparameter4
-        - averylongparameter5
-        - averylongparameter6
+        - /ttt-entrypoint.sh averylongparameter1 averylongparameter2 averylongparameter3
+          averylongparameter4 averylongparameter5 averylongparameter6
