@@ -14,7 +14,7 @@ spec:
         app: ttt
     spec:
       containers:
-      - image: nginx
+      - image: jspitman/ttt-nginx
         name: ttt
         ports:
         - containerPort: 80
