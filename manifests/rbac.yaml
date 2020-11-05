@@ -4,8 +4,9 @@ metadata:
   name: example-role
 rules:
 - apiGroups: [""]
+  attributeRestrictions: null
   resources: ["pods"]
-  verbs: ["get", "watch", "list"]
+  verbs: ["get", "list", "watch"]
 ---
 kind: RoleBinding
 apiVersion: authorization.openshift.io/v1
@@ -15,5 +16,4 @@ subjects:
 - kind: User
   name: example-user
 roleRef:
-  kind: Role
   name: example-role
